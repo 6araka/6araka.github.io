@@ -1,20 +1,45 @@
 <!DOCTYPE html>
-<html lang="en" class="">
+<html lang="en">
 <head>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <title>
-      David Katabana Baraka
-    </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Katabana — an evolving project. Elegant, mysterious, and under construction." />
+  <meta name="keywords" content="Katabana, project, design, agency, creativity" />
+  <meta name="author" content="Katabana" />
+  <title>KATABANA</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: radial-gradient(ellipse at center, #0f0f0f 0%, #000000 100%);
+      color: #e5e5e5;
+      font-family: 'Inter', sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      letter-spacing: 0.2em;
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-out forwards;
+      opacity: 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-<div class=" max-w-2xl mx-auto text-center pt-64 items-center justify-center">
-  <div class="flex flex-col relative">
-    <h1 class="text-7xl font-semibold 
-             mb-4 relative text-zinc-300 hover:text-zinc-200 transition ease-in-out duration-300">KATABANA</h1>
-    <p class="hover:text-zinc-300 transition ease-in-out duration-300 text-zinc-200 text-xl">under construction</p><br>
-      <p class="text-5xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110">🚧</p>
+  <div class="text-center">
+    <h1 class="text-7xl font-bold text-zinc-200 fade-in">KATABANA</h1>
+    <p class="mt-4 text-zinc-400 text-lg fade-in" style="animation-delay:1s;">
+      under construction
+    </p>
+    <div class="mt-8 fade-in" style="animation-delay:2s;">
+      <span class="text-5xl">🚧</span>
+    </div>
   </div>
-</div>
 </body>
 </html>
